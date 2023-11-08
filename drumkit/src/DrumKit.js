@@ -3,13 +3,13 @@ import DrumKitButton from "./DrumKitButton";
 
 const DrumKit = () => (
   <div className="all">
-    <DrumKitButton keyName="w" backgroundImage="img/w.png" />
-    <DrumKitButton keyName="a" backgroundImage="img/a.png" />
-    <DrumKitButton keyName="s" backgroundImage="img/s.png" />
-    <DrumKitButton keyName="d" backgroundImage="img/d.png" />
-    <DrumKitButton keyName="j" backgroundImage="img/j.png" />
-    <DrumKitButton keyName="k" backgroundImage="img/k.png" />
-    <DrumKitButton keyName="l" backgroundImage="img/l.png" />
+    <DrumKitButton keyName="w" data-key="w" />
+    <DrumKitButton keyName="a" data-key="a" />
+    <DrumKitButton keyName="s" data-key="s" />
+    <DrumKitButton keyName="d" data-key="d" />
+    <DrumKitButton keyName="j" data-key="j" />
+    <DrumKitButton keyName="k" data-key="k" />
+    <DrumKitButton keyName="l" data-key="l" />
   </div>
 );
 

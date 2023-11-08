@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const smartPeople = [
+  { name: "Johann Goethe", age: 83, IQ: 210 },
+  { name: "Jessi", age: 12, IQ: 220 },
+  { name: "Adele", age: 32, IQ: 110 },
+  { name: "Goethe", age: 23, IQ: 150 },
+  { name: "Hana", age: 34, IQ: 210 },
+  { name: "Leole", age: 23, IQ: 180 },
+];
+
+const App = () => (
+  <ul>
+    {smartPeople.map((person, index) => (
+      <li key={index}>{person.name}</li>
+    ))}
+  </ul>
+);
 
 export default App;

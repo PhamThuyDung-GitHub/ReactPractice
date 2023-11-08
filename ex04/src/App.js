@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import ReactDOM from "react-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+const App = () => {
+  const root = ReactDOM.create("div", { id: "root" });
+  root.render(
+    return ( // add a return statement
+      <header>
+        <h1>Header</h1>
       </header>
-    </div>
-  );
-}
-
-export default App;
+      <nav>
+        <h1>item1</h1>
+        <h1>item2</h1>
+      </nav>
+      <main>
+        <p>The main content...</p>
+      </main>
+    ) // add a closing parenthesis
+  ); // add a closing parenthesis
+};

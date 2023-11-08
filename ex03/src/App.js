@@ -11,4 +11,4 @@ Myexercise.render(
   </MySection>
 );
 
-export default Myexercise;
+export default App;

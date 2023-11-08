@@ -3,9 +3,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 const App = () => {
-  const root = ReactDOM.create("div", { id: "root" });
-  root.render(
-    return ( // add a return statement
+  return (
+    <div>
       <header>
         <h1>Header</h1>
       </header>
@@ -16,6 +15,8 @@ const App = () => {
       <main>
         <p>The main content...</p>
       </main>
-    ) // add a closing parenthesis
-  ); // add a closing parenthesis
+    </div>
+  );
 };
+
+export default App;
